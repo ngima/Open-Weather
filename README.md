@@ -18,9 +18,8 @@ Sample
 -------
 
 
-|  | |
-|:-----|---------|
 |  <br><img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" alt="OpenWeather" width="72"></img> <br><br>OpenWeather App sample <br><br> • Search by City<br>• Get Current Weather Details<br>• Can view multiple cities weather details<br><br><br> | <img src="app/screenshots/openweather_sample.png" width="320" alt="Jetnews sample demo"> |
+|:-----|---------|
 
 
 License

@@ -10,11 +10,11 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class BaseRepository {
+public class RetrofitProvider {
 
-    protected Retrofit retrofit;
+    public Retrofit retrofit;
 
-    public BaseRepository() {
+    public RetrofitProvider() {
 
         OkHttpClient.Builder httpClient =
                 new OkHttpClient.Builder();

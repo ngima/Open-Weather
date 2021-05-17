@@ -1,6 +1,8 @@
 package np.info.ngima.openweather;
 
+import np.info.ngima.openweather.data.api.WeatherApi;
 import np.info.ngima.openweather.exception.ApiKeyNotInitializedException;
+import np.info.ngima.openweather.repo.RetrofitProvider;
 import np.info.ngima.openweather.repo.WeatherRepository;
 
 /**
@@ -23,7 +25,7 @@ public class OpenWeather {
     private WeatherRepository weatherRepository;
 
     private OpenWeather() {
-        weatherRepository = new WeatherRepository();
+        weatherRepository = new WeatherRepository(new RetrofitProvider().retrofit.create(WeatherApi.class));
     }
 
     public static OpenWeather getInstance() {

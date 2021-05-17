@@ -23,4 +23,8 @@ public class WeatherResponse {
     public int timezone;
     public int visibility;
     public Wind wind;
+
+    public WeatherResponse(int statusCode) {
+        this.statusCode = statusCode;
+    }
 }

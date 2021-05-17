@@ -4,12 +4,12 @@ import io.reactivex.Observable;
 import np.info.ngima.openweather.data.api.WeatherApi;
 import np.info.ngima.openweather.models.weather_response.WeatherResponse;
 
-public class WeatherRepository extends BaseRepository {
+public class WeatherRepository {
 
     private WeatherApi weatherApi;
 
-    public WeatherRepository() {
-        weatherApi = retrofit.create(WeatherApi.class);
+    public WeatherRepository(WeatherApi weatherApi) {
+        this.weatherApi = weatherApi;
     }
 
 
